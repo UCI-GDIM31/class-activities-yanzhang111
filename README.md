@@ -9,8 +9,10 @@ Write your W1 activity Devlog here.
 3. The error said “; expected,” which means I forgot to put a semicolon at the end of the line. It showed that every line of code in C# needs a semicolon to run correctly.
 
 ### W4
-HI!!!!!!
-
+table 5
+line5：_moveSpeed is a member variable of type float. It stores how fast the cat moves. Because of [SerializeField], we can change its value in the Unity Inspector even though it’s private.
+line22：translation is a local variable, and the type is float. 
+line25：transform is a Component. This line is calling a method named Translate on that component.
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
