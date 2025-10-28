@@ -18,6 +18,16 @@ For the collider setup, we gave Rigidbodies to the Cat and the SoccerBall so the
 
 At first it didn’t work because the BounceOffWall script was missing the Rigidbody reference, so nothing bounced. After dragging the Rigidbody into the script and adjusting Bounce Force, it worked fine.
 
+### W5
+Activity 1 
+Our table discussed the question: what does GetComponent() do in Unity?
+The answer is that it lets us access other components on the same GameObject. For example, we use GetComponent<NavMeshAgent>() to get the navigation component on the deer so we can control its movement.
+
+Activity 2 (DeerW5)
+Before writing the DeerW5 script, I planned what the class needed. It needed a Transform variable for the target the deer should walk toward, and a NavMeshAgent to move the deer. I used the Start() method because the deer should start moving when the game begins. In Start(), I got the NavMeshAgent with GetComponent<NavMeshAgent>() and then used SetDestination(_target.position) so the deer walks to the target.
+Activity 2 (CatW5)
+In CatW5, I used Vector3.forward and Vector3.back to move the cat forward and backward with the W and S keys. I used transform.Translate() to apply the movement. Then I used the _flipWSControls boolean to flip the controls. If it is true, I multiply the movement direction by -1 so that W moves backward and S moves forward.
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
