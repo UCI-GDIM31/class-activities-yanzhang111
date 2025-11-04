@@ -28,6 +28,15 @@ Before writing the DeerW5 script, I planned what the class needed. It needed a T
 Activity 2 (CatW5)
 In CatW5, I used Vector3.forward and Vector3.back to move the cat forward and backward with the W and S keys. I used transform.Translate() to apply the movement. Then I used the _flipWSControls boolean to flip the controls. If it is true, I multiply the movement direction by -1 so that W moves backward and S moves forward.
 
+### W6
+Activity1
+I category unity coding. [https://docs.google.com/document/d/1exNqQE_zGuOoztND9FT3ldDwkXjJ6m8a8oRDWERaMyg/edit?usp=sharing_eil&ts=69095525]
+
+Activity2
+This activity is to make the bat chase the cat. I need a Transform for the player to know where the cat is, a speed value to control how fast the bat moves, and a bool called chasing to decide if it’s chasing or not.
+I’ll use Start() and Update(), plus two custom methods: StartChasing() and StopChasing().
+In Update(), the bat moves toward the cat, StartChasing() makes it chase, and StopChasing() makes it stop.
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
