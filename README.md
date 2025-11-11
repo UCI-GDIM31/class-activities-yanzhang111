@@ -37,6 +37,12 @@ This activity is to make the bat chase the cat. I need a Transform for the playe
 I’ll use Start() and Update(), plus two custom methods: StartChasing() and StopChasing().
 In Update(), the bat moves toward the cat, StartChasing() makes it chase, and StopChasing() makes it stop.
 
+### W7
+Activity1
+I working on Gameplay. and this is the link https://docs.google.com/document/d/1TsVke4FYWiPQJM1o9TWKmZdGuEjed6uXTYwZxrXfC3I/edit?usp=sharing
+Activity2
+The original code used Vector3.forward, so the Muskrat always moved in the world forward direction and went the wrong way after turning. I changed it to transform.forward so it moves in the direction it’s facing.
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
